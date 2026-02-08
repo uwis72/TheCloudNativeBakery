@@ -12,6 +12,6 @@ jobs:
       - name: What-If
         run: 
           az deployment sub what-if \
-            --location westeurop \
+            --location westeurope \
             --template-file infrastructure/main.biceps
       
