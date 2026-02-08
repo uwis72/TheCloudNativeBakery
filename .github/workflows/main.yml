@@ -11,7 +11,5 @@ jobs:
           creds: ${{secrets.AZURE_CREDENTIALS}}
       - name: What-If
         run: 
-          az deployment sub what-if \
-            --location westeurope \
-            --template-file infrastructure/main.biceps
+          az deployment sub what-if --location westeurope --template-file infrastructure/main.bicep
       
